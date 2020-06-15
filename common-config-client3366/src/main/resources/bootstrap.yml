@@ -1,40 +1,37 @@
 server:
-  port: 3344
+  port: 3366
 spring:
   application:
-    name: cloud-config
+    name: cloud-config-client
   cloud:
     config:
-      server:
-        git:
-          uri: git@github.com:cheungyutong/common-config.git
-          search-paths:
-            - common-config
-      label: master
-  #rabbitmq相关配置
+      label: master   #分支名称
+      name: config    #配置文件名
+      profile: dev    #读取后缀名称
+      uri: http://localhost:3344    #配置中心地址
+  #rabbitmq相关配置，15672是web管理界面的端口，5672是MQ访问的端口
   rabbitmq:
     host: 39.106.151.228
     port: 5672
     username: guest
     password: guest
-#服务注册到eureka地址
 eureka:
   client:
     service-url:
-      defaultZone:  http://localhost:7001/eureka  #单机版
-      #defaultZone:  http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka   #集群版
+      #defaultZone:  http://localhost:7001/eureka  #单机版
+      defaultZone:  http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka   #集群版
   instance:
     #设置实例的id
-    #instance-id: config
+    #instance-id: config-client
     #访问路径可以显示IP地址
     prefer-ip-address: true
     #Eureka客户端向服务端发送心跳的时间间隔，单位为秒（默认30秒）
     lease-renewal-interval-in-seconds:  1
     #Eureka服务端在收到最后一次心跳后等待时间上线，单位为秒（默认90秒），超时将剔除服务
     lease-expiration-duration-in-seconds: 1
-#rabbitmq相关配置，暴露bus刷新配置的断点
+#暴露监控端点
 management:
-  endpoints:    #暴露bus刷新配置的端点
+  endpoints:
     web:
       exposure:
-        include: "bus-refresh"
+        include:  "*"

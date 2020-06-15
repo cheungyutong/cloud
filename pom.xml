@@ -24,6 +24,10 @@
     <module>common-gateway</module>
     <module>common-config</module>
     <module>common-config-client3355</module>
+    <module>common-config-client3366</module>
+      <module>common-stream-rabbitmq-provider8801</module>
+      <module>common-stream-rabbitmq-consumer8802</module>
+      <module>common-stream-rabbitmq-consumer8803</module>
   </modules>
 
   <!-- 统一管理jar包版本 -->
