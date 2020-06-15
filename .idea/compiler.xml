@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-api" />
+        <module name="common-config" />
+        <module name="common-config-client3355" />
+        <module name="common-eureka" />
+        <module name="common-eureka7002" />
+        <module name="common-feign-order" />
+        <module name="common-gateway" />
+        <module name="common-hystrix-dashboard" />
+        <module name="common-hystrix-feign-order" />
+        <module name="common-hystrix-provider" />
+        <module name="common-order" />
+        <module name="common-provider" />
+        <module name="common-provider8002" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

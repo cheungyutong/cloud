@@ -17,14 +17,13 @@
     <module>common-eureka</module>
     <module>common-eureka7002</module>
     <module>common-provider8002</module>
-      <module>common-feign-order</module>
-      <module>common-hystrix-provider</module>
-      <module>common-hystrix-order</module>
-      <module>common-hystrix-feign-order</module>
-      <module>common-hystrix-dashboard</module>
-      <module>common-gateway</module>
-      <module>common-config</module>
-      <module>common-config-client3355</module>
+    <module>common-feign-order</module>
+    <module>common-hystrix-provider</module>
+    <module>common-hystrix-feign-order</module>
+    <module>common-hystrix-dashboard</module>
+    <module>common-gateway</module>
+    <module>common-config</module>
+    <module>common-config-client3355</module>
   </modules>
 
   <!-- 统一管理jar包版本 -->
