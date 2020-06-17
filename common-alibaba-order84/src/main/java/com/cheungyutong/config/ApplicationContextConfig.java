@@ -1,26 +1,20 @@
 package com.cheungyutong.config;
 
-import com.sun.corba.se.spi.orb.ParserImplBase;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
-import java.security.PublicKey;
-
 /**
  * @Author cheungyutong
- * @Date 2020/6/10 14:48
+ * @Date 2020/6/16 20:02
  */
 @Configuration
 public class ApplicationContextConfig {
 
     @Bean
-    //@LoadBalanced
-    public RestTemplate getRestTemplate() {
+    @LoadBalanced //负载均衡
+    public RestTemplate getRestTempalte(){
         return new RestTemplate();
     }
 }
-//application.xml
-//利用<bean id = "" class = "">
-//使用@LoadBalanced注解赋予RestTemplate负载均衡的能力

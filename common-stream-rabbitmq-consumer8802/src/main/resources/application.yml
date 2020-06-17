@@ -21,7 +21,8 @@ spring:
           destination: studyExchange # 表示要使用的exchange名称定义
           content-type: application/json # 设置消息类型，本次为json，文本则设为text/plain
           binder: defaultRabbit # 设置要绑定的消息服务的具体设置
-          group: spectrumrpcA
+          #设置消费者分组，分组不同，会重复消费
+          #group: cheungyutong
 eureka:
   client:
     register-with-eureka: true    #表示是否将自己注册进EurekaServer默认为true
