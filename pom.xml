@@ -32,11 +32,11 @@
     <module>common-alibaba-provider9002</module>
     <module>common-alibaba-order84</module>
     <module>common-alibaba-config-client3377</module>
-      <module>common-alibaba-sentinel-service8401</module>
-      <module>common-alibaba-provider-payment9003</module>
+    <module>common-alibaba-sentinel-service8401</module>
+    <module>common-alibaba-provider-payment9003</module>
     <module>common-alibaba-provider-payment9004</module>
-      <module>common-alibaba-consumer-order84</module>
-      <module>common-alibaba-module-order</module>
+    <module>common-alibaba-consumer-order84</module>
+    <module>common-alibaba-module-order</module>
     <module>common-alibaba-module-storage</module>
     <module>common-alibaba-module-account</module>
   </modules>
